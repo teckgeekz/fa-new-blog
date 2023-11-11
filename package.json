@@ -1,4 +1,15 @@
 {
+  "scripts": {
+    "edgio:dev": "edgio dev",
+    "edgio:build": "edgio build",
+    "edgio:deploy": "edgio deploy",
+    "dev": "next",
+    "dev:watch": "next-remote-watch ./posts",
+    "build": "next build",
+    "start": "next start",
+    "export": "next build && next export",
+    "lint": "next lint"
+  },
   "name": "nextjs-blog-theme",
   "description": "A customizable Next.js and Tailwind blog starter. Designed by the Bejamas agency.",
   "author": "Bejamas and Netlify Inc.",
@@ -11,14 +22,6 @@
   "homepage": "https://github.com/netlify-templates/nextjs-blog-theme",
   "bugs": {
     "url": "https://github.com/netlify-templates/nextjs-blog-theme/issues"
-  },
-  "scripts": {
-    "dev": "next",
-    "dev:watch": "next-remote-watch ./posts",
-    "build": "next build",
-    "start": "next start",
-    "export": "next build && next export",
-    "lint": "next lint"
   },
   "dependencies": {
     "@mapbox/rehype-prism": "^0.9.0",
@@ -35,6 +38,11 @@
     "remark-gfm": "^3.0.1"
   },
   "devDependencies": {
+    "@edgio/cli": "^7.4.0",
+    "@edgio/core": "^7.4.0",
+    "@edgio/devtools": "^7.4.0",
+    "@edgio/next": "^7.4.0",
+    "@edgio/prefetch": "^7.4.0",
     "autoprefixer": "^10.4.0",
     "eslint": "<9.0.0",
     "eslint-config-next": "12.3.4",
